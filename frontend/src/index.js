@@ -8,10 +8,12 @@ import NotFound from './components/NotFound'
 import * as serviceWorker from './serviceWorker';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import Header from "./components/layout/Header";
+import PostContainer from "./containers/PostContainer";
 
 const routing = (
     <div>
     <Header/>
+    <PostContainer/>
     <Router>
         <div>
             <ul>
