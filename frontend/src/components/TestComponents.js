@@ -5,7 +5,7 @@ class TestComponents extends Component{
     render() {
         return(
             <div>
-                test 123
+                test 1234
             </div>
         )
     }
