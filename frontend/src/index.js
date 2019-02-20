@@ -7,8 +7,11 @@ import Contact from "./components/Contact";
 import NotFound from './components/NotFound'
 import * as serviceWorker from './serviceWorker';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
+import Header from "./components/layout/Header";
 
 const routing = (
+    <div>
+    <Header/>
     <Router>
         <div>
             <ul>
@@ -30,6 +33,7 @@ const routing = (
             </Switch>
         </div>
     </Router>
+    </div>
 )
 ReactDOM.render(routing, document.getElementById('root'));
 
