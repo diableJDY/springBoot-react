@@ -6,36 +6,37 @@ import Users from "./components/Users";
 import Contact from "./components/Contact";
 import NotFound from './components/NotFound'
 import * as serviceWorker from './serviceWorker';
+
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import Header from "./components/layout/Header";
+import SideBar from "./components/layout/SideBar";
 
 const lv = React.createElement("h2",null,'HelloWord222')
 
 const routing = (
     <div>
-    <Header/>
-    <Router>
-        <div>
-            {lv}
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/users">Users</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
-            <Switch>
-                <Route exact path="/" component={App} />
-                <Route path="/users" component={Users} />
-                <Route path="/contact" component={Contact} />
-                <Route component={NotFound} />
-            </Switch>
-        </div>
-    </Router>
+        <SideBar/>
+    {/*<Router>*/}
+        {/*<div>*/}
+            {/*<ul>*/}
+                {/*<li>*/}
+                    {/*<Link to="/">Home</Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                    {/*<Link to="/users">Users</Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                    {/*<Link to="/contact">Contact</Link>*/}
+                {/*</li>*/}
+            {/*</ul>*/}
+            {/*<Switch>*/}
+                {/*<Route exact path="/" component={App} />*/}
+                {/*<Route path="/users" component={Users} />*/}
+                {/*<Route path="/contact" component={Contact} />*/}
+                {/*<Route component={NotFound} />*/}
+            {/*</Switch>*/}
+        {/*</div>*/}
+    {/*</Router>*/}
     </div>
 )
 ReactDOM.render(routing, document.getElementById('root'));
