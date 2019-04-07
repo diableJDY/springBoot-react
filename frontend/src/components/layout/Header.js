@@ -1,19 +1,23 @@
 import React from 'react';
-import './Header.css';
+import '../../style/loyout/_Header.css';
 
 
 const Header = () =>{
     return(
-        <div className="header">
-            {/*<ul>*/}
-            {/*<li><NavLink exact  to="/" className="item" activeClassName="active">홈</NavLink></li>*/}
-            {/*<li><NavLink to="/about" className="item">소개</NavLink></li>*/}
-            {/*<li><NavLink to="/posts" className="item">포스트</NavLink></li>*/}
-            {/*<li><NavLink to="/me" className="item">마이페이지</NavLink></li>*/}
-            {/*<li><NavLink to="/login" className="item">로그인</NavLink></li>*/}
-            {/*<li><NavLink to="/search" className="item">검색</NavLink></li>*/}
-            {/*</ul>*/}
-            header
+        <div className="topnav" id="myTopnav">
+            <a href="#home" className="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <div className="dropdown">
+                <button className="dropbtn">바로가기
+                    <i className="fa fa-caret-down"></i>
+                </button>
+                <div className="dropdown-content">
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" className="icon" onClick="myFunction()">&#9776;</a>
         </div>
     );
 }
