@@ -1,4 +1,4 @@
-package com.start.react.Controller;
+package com.start.react.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
