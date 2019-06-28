@@ -1,5 +1,6 @@
 package com.start.react;
 
+import com.start.react.model.EnumModel;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,6 +12,8 @@ public class ReactApplicationTests {
 
     @Test
     public void contextLoads() {
+
+        System.out.println(EnumModel.Y.isKey2());
     }
 
 }
